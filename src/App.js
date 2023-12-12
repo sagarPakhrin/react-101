@@ -18,11 +18,15 @@ function App() {
 
   return (
     <div>
-      <Button></Button>
-      <button onClick={sub}>-</button>
+      <Button onClick={sub}>-</Button>
       <span>{count}</span>
-      <button onClick={add}>+</button>
-      {count !== 0 ? <div> {count} is {count % 2 === 0 ? 'Even' : 'Odd'} </div> : null}
+      <Button onClick={add}>+</Button>
+      {count !== 0 ? (
+        <div>
+          {' '}
+          {count} is {count % 2 === 0 ? 'Even' : 'Odd'}{' '}
+        </div>
+      ) : null}
     </div>
   );
 }
