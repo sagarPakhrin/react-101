@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import { Button } from './components/Button';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div>
+      <Button></Button>
       <button onClick={sub}>-</button>
       <span>{count}</span>
       <button onClick={add}>+</button>
